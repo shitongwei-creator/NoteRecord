@@ -1,4 +1,4 @@
-* [Home](/)
+* [Home](home.md)
 * [Android Note](androidnote.md)
 * [Java Note](javanote.md)
 * [Other Note](othernote.md)

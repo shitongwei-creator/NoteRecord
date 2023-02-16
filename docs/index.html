@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Awei</title>
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://notebook.js.org/plugin/sweetalert.min.css" type='text/css' media='all' />
 </head>
 <body>
   <div id="app"></div>
@@ -15,17 +15,56 @@
        coverpage: true,
        executeScript: true,
        loadSidebar: true,
-       loadNavbar: true,
-       mergeNavbar: true,
        maxLevel: 4,
+       nativeEmoji: true,
        auto2top: true,
        subMaxLevel: 2,
        name: 'aWei',
        repo: '',
-       search: 'auto',
     }
   </script>
+  <!-- 复制代码-->
+  <script src="https://notebook.js.org/plugin/docsify-copy-code.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://notebook.js.org/plugin/js/docsify.min.js"></script>
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+  L2Dwidget.init({
+    "model": {
+      //jsonpath控制显示那个小萝莉模型，
+      //(切换模型需要改动)
+      jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+      "scale": 1
+    },
+    "display": {
+      "position": "right",
+      "width": 70,
+      "height": 140,
+      "hOffset": 35,
+      "vOffset": -20
+    },
+    "mobile": {
+      "show": true,
+      "scale": 0.5
+    },
+    "react": {
+      "opacityDefault": 0.7,
+      "opacityOnHover": 0.2
+    }
+  });
+</script>
+  <!-- mouse click -->
+  <script src="https://notebook.js.org/plugin/click_heart.js"></script>
+  <!-- 访问量统计 -->
+  <script async src="https://notebook.js.org/plugin/js/busuanzi.pure.mini.js"></script>
+  <!-- 复制提醒 -->
+  <script src="https://notebook.js.org/plugin/sweetalert.min.js"></script>
+  <script>
+    document.body.oncopy = function () {
+     swal("复制成功 🎉",
+             "若要转载或引用请务必保留原文链接，并申明来源",
+             "success"); };
+  </script>
 </body>
 </html>
