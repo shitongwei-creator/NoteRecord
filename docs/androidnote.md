@@ -1,6 +1,6 @@
 ## Android音视频开发
 
-### :black_cat: AudioRecord
+###   AudioRecord
 
 
 ####  1.AudioRecord采集PCM音频文件录音保存
